@@ -10,7 +10,7 @@ import YourLogo from '../chatgpt.svg'
 ring.register()
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true // This is also the default, can be omitted
 });
 
