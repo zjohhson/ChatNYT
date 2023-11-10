@@ -1,6 +1,19 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thank you to [Net Ninja](https://www.youtube.com/watch?v=ZSWl5UwhHcs) for an incredibly detailed and helpful tutorial on setting up a Wordle clone app in React! Most of my frontend experience is in Vue.js, so this project helped me immensely in getting better with things like React Hooks.
+
+## Overview
+It is no secret that Wordle took the world by storm in 2022. It allowed people to connect with their friends, family, and peers through a little bit of healthy competition. Personally, I look forward to challenging my partner who lives across the country in a Wordle match everyday (even though I lose more often than not 😔).
+
+As somebody who hates to lose, coupled with being an AI-optimist who likes to throw AI at trivial problems, I wanted to see how I could leverage Generative AI to help me in my daily Wordle endeavors. I mean, considering that there are more than *158,000* 5-letter words in the English language, how am I supposed to guess just one of them in 6 tries? Preposterous. Ridiculous.
+
+Introducing [ChatNYT](https://chatnyt-1acc81fc0a7a.herokuapp.com/), a ChatGPT assisted Wordle game! This game allows the user to prompt ChatGPT for a hint that connects their most previous guess to the hidden word at most once. The hope is that the user can narrow down the possible list of 5 letter words that they are guessing.
+
+We know that [Language Models are Few Shot Learners](https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html). For this project, I ask ChatGPT to connect the hidden word with the most previous guess (in nontrivial ways, i.e. other than the fact that they are both 5 letter words), and feed in several examples to allow ChatGPT to perform few-shot in-context learning in the hopes to make the hints more helpful.
+
+This app was created using React and the OpenAI API (GPT-3.5). See below how to run locally, or play the deployed version [here](https://chatnyt-1acc81fc0a7a.herokuapp.com/)!
+
+
 
 ## Available Scripts
 
@@ -33,38 +46,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
